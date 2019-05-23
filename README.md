@@ -10,6 +10,17 @@ You can earn each certification by completing its 5 final projects.
 1.  Responsive Web Design Certification (300 hours)
     1.  Basic HTML and HTML5  
     2.  Basic CSS
+    3.  Applied Visual Design
+    4.  Applied Accessibility
+    5.  Responsive Web Design Principles
+    6.  CSS Flexbox
+    7.  CSS FGrid
+    #### Project Completed
+    1.   Build a Tribute Page
+    2.   Build a Survey Form
+    3.   Build a Product Landing Page
+    
+    
 2.  Javascript Algorithms And Data Structures Certification (300 hours)
 
 
