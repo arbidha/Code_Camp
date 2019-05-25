@@ -7,9 +7,10 @@
         What can Python do</a>
     </li>
     <li>
-    <a class="nav-link" href="#Python_vs_Other">Python Syntax vs other languages</a>
+      <a class="nav-link" href="#Python_vs_Other">Python Syntax vs other languages</a>
     </li>
     <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Python_syntax">Python Syntax</a></li>
     <li><a class="nav-link" href="#Variables">Variables</a></li>
     <li>
       <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
@@ -53,7 +54,7 @@
     <article>
       <ul>
         <li>
-         Python can be used on a server to create web applications.
+          Python can be used on a server to create web applications.
         </li>
         <li>Python can be used alongside software to create workflows.</li>
         <li>
@@ -82,20 +83,61 @@
   <section class="main-section" id="Hello_world">
     <header>Hello world</header>
     <article>
-      Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
-
-The way to run a python file is like this on the command line:
+      Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed. The way to run a python file is like this on the command line:
       <code>C:\Users\Your_Name>python helloworld.py
-      </code> Where "helloworld.py" is the name of your python file.
+      </code> Where "helloworld.py" is the name of your python file. Let's write our first Python file, called helloworld.py, which can be done in any text editor. Write the below code.
+      <code>print("Hello, World!")</code> Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:
 
-Let's write our first Python file, called helloworld.py, which can be done in any text editor. Write the below code.  
-      <code>print("Hello, World!")</code>
-      Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:
-      
-      <code>C:\Users\Your_Name>python helloworld.py</code>
-      The output should read:
-      <code>Hello, World!</code>
-      Congratulations, you have written and executed your first Python program.
+      <code>C:\Users\Your_Name>python helloworld.py</code> The output should read:
+      <code>Hello, World!</code> Congratulations, you have written and executed your first Python program.
+    </article>
+  </section>
+  <section class="main-section" id="Python_syntax">
+    <header>Python Syntax</header>
+    <h3>Python Indentations</h3>
+    <p>
+      Where in other programming languages the indentation in code is for readability only, in Python the indentation is very important. Python uses indentation to indicate a block of code.
+    </p>
+    <div>
+      <h4>Example</h4>
+      <code>
+        if 5 > 2:
+          &emsp;  print("Five is greater than two!")
+      </code>
+    </div>
+    <h3>Comments</h3>
+    <p>
+      Python has commenting capability for the purpose of in-code documentation. Comments start with a #, and Python will render the rest of the line as a comment:
+    </p>
+    <div>
+      <h4>Example Comments in Python:</h4>
+      <code>#This is a comment.
+print("Hello, World!")</code>
+    </div>
+    <h3>Docstrings</h3>
+    <p>
+      Python also has extended documentation capability, called docstrings. Docstrings can be one line, or multiline. Python uses triple quotes at the beginning and end of the docstring:
+    </p>
+    <div>
+      <h4>Example Docstrings are also comments:</h4>
+      <code>"""This is a 
+multiline docstring."""
+print("Hello, World!")</code>
+    </div>
+  </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>Declaring variables</header>
+    <article>
+      You can declare a variable in three ways:
+      <p>
+        With the keyword var. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.
+      </p>
+      <p>
+        By simply assigning it a value. For example, <code>x = 42.</code> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+      </p>
+      <p>
+        With the keyword let. For example,<code> let y = 13.</code> This syntax can be used to declare a block scope local variable. See Variable scope below.
+      </p>
     </article>
   </section>
   <section class="main-section" id="Variables">
