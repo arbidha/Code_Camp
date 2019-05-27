@@ -13,9 +13,9 @@
     <li><a class="nav-link" href="#Python_syntax">Python Syntax</a></li>
     <li><a class="nav-link" href="#Variables">Variables</a></li>
     <li>
-      <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+      <a class="nav-link" href="#Variable_Names">Variable Names</a>
     </li>
-    <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+    <li><a class="nav-link" href="#Output_Variables">Output Variables</a></li>
     <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
     <li><a class="nav-link" href="#Constants">Constants</a></li>
     <li><a class="nav-link" href="#Data_types">Data types</a></li>
@@ -125,62 +125,77 @@ multiline docstring."""
 print("Hello, World!")</code>
     </div>
   </section>
-  <section class="main-section" id="Declaring_variables">
-    <header>Declaring variables</header>
-    <article>
-      You can declare a variable in three ways:
-      <p>
-        With the keyword var. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.
-      </p>
-      <p>
-        By simply assigning it a value. For example, <code>x = 42.</code> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
-      </p>
-      <p>
-        With the keyword let. For example,<code> let y = 13.</code> This syntax can be used to declare a block scope local variable. See Variable scope below.
-      </p>
-    </article>
-  </section>
   <section class="main-section" id="Variables">
     <header>Variables</header>
     <p>
-      You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+      Unlike other programming languages, Python has no command for declaring a variable.
     </p>
     <p>
-      A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a"
-      through "z" (lowercase).
+      A variable is created the moment you first assign a value to it.
     </p>
+    <div>
+      <h4>Example</h4>
+      <code>x = 5
+        y = "John"
+        print(x)
+        print(y)
+      </code>
+    </div>
     <p>
-      You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+      Variables do not need to be declared with any particular type and can even change type after they have been set.
     </p>
+        <div>
+      <h4>Example</h4>
+      <code>x = 4 # x is of type int
+        x = "Sally" # x is now of type str
+        print(x)
+      </code>
+    </div>
   </section>
-  <section class="main-section" id="Declaring_variables">
-    <header>Declaring variables</header>
+  <section class="main-section" id="Variable_Names">
+    <header>Variable Names</header>
     <article>
       You can declare a variable in three ways:
       <p>
-        With the keyword var. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.
+       A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). 
       </p>
-      <p>
-        By simply assigning it a value. For example, <code>x = 42.</code> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
-      </p>
-      <p>
-        With the keyword let. For example,<code> let y = 13.</code> This syntax can be used to declare a block scope local variable. See Variable scope below.
-      </p>
+      <p>Rules for Python variables:</p>
+      <ul>
+        <li>A variable name must start with a letter or the underscore character</li>
+         <li>A variable name cannot start with a number</li>
+         <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+         <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+      </ul>
+      <div class="w3-panel w3-note">
+        <p>Remember that variables are case-sensitive</p>
+      </div>
     </article>
   </section>
-  <section class="main-section" id="Variable_scope">
-    <header>Variable scope</header>
+  <section class="main-section" id="Output_Variables">
+    <header>Output Variables</header>
     <article>
       <p>
-        When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available
-        only within that function.
+        The Python print statement is often used to output variables.
       </p>
 
       <p>
-        JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of
-        x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+        To combine both text and a variable, Python uses the + character:
       </p>
-      <code>if (true) { var x = 5; } console.log(x); // 5</code>
+      <div>
+        <h3>Example</h3>
+        <code>x = "awesome"
+print("Python is " + x)</code>
+      </div>
+      <p>You can also use the + character to add a variable to another variable:</p>
+      <div>
+        <h3>Example</h3>
+        <code>x = "Python is "
+            y = "awesome"
+            z =  x + y
+            print(z)
+        </code>
+      </div>
+      
       <p>
         This behavior changes, when using the let declaration introduced in ECMAScript 2015.
       </p>
