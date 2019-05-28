@@ -16,9 +16,10 @@
       <a class="nav-link" href="#Variable_Names">Variable Names</a>
     </li>
     <li><a class="nav-link" href="#Output_Variables">Output Variables</a></li>
-    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
-    <li><a class="nav-link" href="#Constants">Constants</a></li>
-    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li><a class="nav-link" href="#Python_list">Python List</a></li>
+    <li><a class="nav-link" href="#Tuples">Tuples</a></li>
+    <li><a class="nav-link" href="#Set">Set</a></li>
+    <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
     <li>
       <a class="nav-link" href="#if...else_statement">if...else statement</a>
     </li>
@@ -98,7 +99,7 @@
     <p>
       Where in other programming languages the indentation in code is for readability only, in Python the indentation is very important. Python uses indentation to indicate a block of code.
     </p>
-    <div>
+    <div class="example">
       <h4>Example</h4>
       <code>
         if 5 > 2:
@@ -109,7 +110,7 @@
     <p>
       Python has commenting capability for the purpose of in-code documentation. Comments start with a #, and Python will render the rest of the line as a comment:
     </p>
-    <div>
+    <div class="example">
       <h4>Example Comments in Python:</h4>
       <code>#This is a comment.
 print("Hello, World!")</code>
@@ -118,7 +119,7 @@ print("Hello, World!")</code>
     <p>
       Python also has extended documentation capability, called docstrings. Docstrings can be one line, or multiline. Python uses triple quotes at the beginning and end of the docstring:
     </p>
-    <div>
+    <div class="example">
       <h4>Example Docstrings are also comments:</h4>
       <code>"""This is a 
 multiline docstring."""
@@ -133,7 +134,7 @@ print("Hello, World!")</code>
     <p>
       A variable is created the moment you first assign a value to it.
     </p>
-    <div>
+    <div class="example">
       <h4>Example</h4>
       <code>x = 5
         y = "John"
@@ -144,7 +145,7 @@ print("Hello, World!")</code>
     <p>
       Variables do not need to be declared with any particular type and can even change type after they have been set.
     </p>
-        <div>
+        <div class="example">
       <h4>Example</h4>
       <code>x = 4 # x is of type int
         x = "Sally" # x is now of type str
@@ -167,7 +168,7 @@ print("Hello, World!")</code>
          <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
       </ul>
       <div class="w3-panel w3-note">
-        <p>Remember that variables are case-sensitive</p>
+        <p>  Remember that variables are case-sensitive</p>
       </div>
     </article>
   </section>
@@ -181,13 +182,13 @@ print("Hello, World!")</code>
       <p>
         To combine both text and a variable, Python uses the + character:
       </p>
-      <div>
+      <div class="example">
         <h3>Example</h3>
         <code>x = "awesome"
 print("Python is " + x)</code>
       </div>
       <p>You can also use the + character to add a variable to another variable:</p>
-      <div>
+      <div class="example">
         <h3>Example</h3>
         <code>x = "Python is "
             y = "awesome"
@@ -195,32 +196,41 @@ print("Python is " + x)</code>
             print(z)
         </code>
       </div>
-      
-      <p>
-        This behavior changes, when using the let declaration introduced in ECMAScript 2015.
-      </p>
-
-      <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-        defined</code
-      >
     </article>
   </section>
-  <section class="main-section" id="Global_variables">
-    <header>Global variables</header>
+  <section class="main-section" id="Python_list">
+    <header>Python Lists</header>
     <article>
       <p>
-        Global variables are in fact properties of the global object. In web
-        pages the global object is window, so you can set and access global
-        variables using the window.variable syntax.
+        A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
       </p>
-
+      <div class="example">
+        <h3>Example</h3>
+        <p>Create a List:</p>
+        <code>thislist = ["apple", "banana", "cherry"]
+print(thislist)</code>
+      </div class="example">
+      <h3>Access Items</h3>
       <p>
-        Consequently, you can access global variables declared in one window or
-        frame from another window or frame by specifying the window or frame
-        name. For example, if a variable called phoneNumber is declared in a
-        document, you can refer to this variable from an iframe as
-        parent.phoneNumber.
+        You access the list items by referring to the index number:
       </p>
+      <div class="example">
+        <h3>Example</h3>
+        <p>Print the second item of the list:</p>
+        <code>thislist = ["apple", "banana", "cherry"]
+print(thislist[1])</code>
+      </div>
+            <h3>Change Item Value</h3>
+      <p>
+        To change the value of a specific item, refer to the index number:
+      </p>
+      <div class="example">
+        <h3>Example</h3>
+        <p>Change the second item:</p>
+        <code>thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)</code>
+      </div>
     </article>
   </section>
   <section class="main-section" id="Constants">
